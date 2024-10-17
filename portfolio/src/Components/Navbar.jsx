@@ -1,12 +1,12 @@
 import React from "react";
 import "../Styles/Navbar.css";
-import logo from "../Assets/images/Sakuni1.svg";
+import logo from "../Assets/images/SK1.png";
 const Navbar = () => {
     return (
         <>
         <nav className="nav-wrapper">
             <div className="nav-content">
-                <img src={logo} alt="Logo"/>
+                <img src= {logo} alt="logo" className="logo"/>
                 <ul>
                     <li>
                         <a className="menu-item">Home</a>
@@ -30,11 +30,12 @@ const Navbar = () => {
                     </button>
                 </ul>
 
-                <button className="menu-btn" onClick={() => {}}>
+                <button className="menu-btn" onClick={() => {
+                }}>
                     <span
-                        class={"material-symbols-outlined"}
-                        style={ {fontSize:"1.8rem" } }
-                        >
+                        class ={"material-symbols-outlined"}
+                        style={{fontSize: "1.8rem"}}
+                    >
                          menu
                     </span>
                 </button>
