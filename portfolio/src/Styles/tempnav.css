@@ -1,0 +1,49 @@
+.nav-wrapper {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    position: static;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+}
+
+.nav-content {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 8px;
+    height: 10rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-item {
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.contact-btn {
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
