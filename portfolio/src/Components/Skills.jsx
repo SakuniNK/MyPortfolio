@@ -7,7 +7,7 @@ const Skills = () => {
 
         <div className='skills-content'>
             <div className='skills'>
-
+                  
             </div>
             <div className='skills-info'>
                 
