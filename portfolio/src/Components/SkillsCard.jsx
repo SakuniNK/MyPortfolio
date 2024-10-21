@@ -1,5 +1,5 @@
-import React from 'react'
-import '../Styles/SkiilsCard.css'
+import React from 'react';
+import "../Styles/SkillsCard.css";
 
 const SkillsCard = ({title, iconUrl, isActive, onClick}) => {
   return (
@@ -7,7 +7,7 @@ const SkillsCard = ({title, iconUrl, isActive, onClick}) => {
     className={'skills-card ${isActive ? "active" : ""}'}
     onClick ={() => onClick()}
     >
-        <div className="skill - icon">
+        <div className="skills-icon">
             <img src={iconUrl} alt={title}/>
         </div>
         <span>{title}</span>

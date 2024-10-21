@@ -1,7 +1,12 @@
+import frontendIcon from '../Assets/images/frontend.png';
+import backendIcon from '../Assets/images/backend.png';
+import softskiilsIcon from '../Assets/images/skill.png';
+import toolIcon from '../Assets/images/tools.png';
+
 export const SKILLS = [
     {
         title: "Frontend",
-        icon: "./Assets/images/frontend.png",
+        icon: frontendIcon,
         skills: [
             { skills: "HTML", percentage: "80%"},
             { skills: "CSS", percentage: "90%"},
@@ -11,7 +16,7 @@ export const SKILLS = [
     },
     {
         title: "Backend",
-        icon: "./Assets/images/backend.png",
+        icon: backendIcon,
         skills: [
             { skills: "Java", percentage: "80%"},
             { skills: "Python", percentage: "90%"},
@@ -21,7 +26,7 @@ export const SKILLS = [
     },
     {
         title: "Tools",
-        icon: "./Assets/images/tools.png",
+        icon: toolIcon,
         skills: [
             { skills: "Git & GitHub", percentage: "80%"},
             { skills: "Visual Studio Code", percentage: "90%"},
@@ -31,7 +36,7 @@ export const SKILLS = [
     },
     {
         title: "Soft Skills",
-        icon: "./Assets/images/skill.png",
+        icon: softskiilsIcon,
         skills: [
             { skills: "Critical Thinking", percentage: "80%"},
             { skills: "Problem Solving", percentage: "90%"},

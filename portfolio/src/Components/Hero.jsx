@@ -8,7 +8,7 @@ import spring from "../Assets/images/spring.png";
 import react from "../Assets/images/react.png";
 import python  from "../Assets/images/python.png";
 import profile from "../Assets/images/Sprofile.jpeg";
-import logo from "../Assets/images/SK1.png";
+
 
 const Hero = ()=> {
     return (

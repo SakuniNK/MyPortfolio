@@ -1,5 +1,8 @@
-import React from 'react'
-import '../Styles/Skills.css'
+import React from 'react';
+import "../Styles/Skills.css";
+import { SKILLS } from "../Utils/data";
+import SkillsCard from "./SkillsCard";
+
 const Skills = () => {
   return (
     <section className='skills-container'>
@@ -7,8 +10,15 @@ const Skills = () => {
 
         <div className='skills-content'>
             <div className='skills'>
-                  
-            </div>
+              <div className='skills-icon'>
+              {SKILLS.map((item) =>(
+                <SkillsCard
+                key={item.title}
+                title={item.title}
+                />
+              ))}
+              </div>
+               </div>  
             <div className='skills-info'>
                 
             </div>
