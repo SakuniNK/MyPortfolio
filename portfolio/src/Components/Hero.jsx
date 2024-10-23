@@ -2,7 +2,6 @@ import  React from 'react';
 import "../Styles/Hero.css";
 import html from "../Assets/images/html.png";
 import css from "../Assets/images/css.png";
-import js from "../Assets/images/js.png";
 import  java  from "../Assets/images/java.png";
 import spring from "../Assets/images/spring.png";
 import react from "../Assets/images/react.png";
