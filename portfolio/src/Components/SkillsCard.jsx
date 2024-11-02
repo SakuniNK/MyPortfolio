@@ -4,7 +4,7 @@ import "../Styles/SkillsCard.css";
 const SkillsCard = ({title, iconUrl, isActive, onClick}) => {
   return (
   
-    <div className={'skills-card ${isActive ? "active" : ""}'}
+    <div className={`skills-card ${isActive ? "active" : " "}`}
 
     onClick ={() => onClick()}
     >

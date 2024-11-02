@@ -10,19 +10,19 @@ const Navbar = () => {
                     <img src={logo} alt="logo" className="logo" />
                     <ul>
                         <li>
-                            <a href="#home" className="menu-item">Home</a>  
+                            <a href="home" className="menu-item">Home</a>  
                         </li>
                         <li>
-                            <a href="#skills" className="menu-item">Skills</a> 
+                            <a href="skills" className="menu-item">Skills</a> 
                         </li>
                         <li>
-                            <a href="#volunteer" className="menu-item">Volunteer Experience</a> 
+                            <a href="volunteer" className="menu-item">Volunteer Experience</a> 
                         </li>
                         <li>
-                            <a href="#projects" className="menu-item">Projects</a> 
+                            <a href="projects" className="menu-item">Projects</a> 
                         </li>
                         <li>
-                            <a href="#contact" className="menu-item">Contact Me</a> 
+                            <a href="contact" className="menu-item">Contact Me</a> 
                         </li>
                         <button className="contact-btn" onClick={() => {}}>
                             Hire Me
