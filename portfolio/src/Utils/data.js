@@ -54,13 +54,23 @@ export const VOLUNTEER_EXPERIENCE = [
         responsibilities: [
             " I need to manage all the work related to the sub brands and need to special forcus on" ,
             "finance and partnerships as the vice chair in Finance and Partnerships.",
-            "sfskujghndtoyelh"
+            
         ],
        
     },
 
     {
         title:"Secretory Team Member in IEEE Techverse Sri Lanka",
+        date: "March 2023 - February 2024",
+        responsibilities: [
+            " I need to support all the work related to the secretory. ",
+            "duasgbdoryu8tunvxcnreur."
+        ],
+       
+    },
+
+    {
+        title:"Finance Team Member in IEEE Techverse Sri Lanka",
         date: "March 2023 - February 2024",
         responsibilities: [
             " I need to support all the work related to the secretory. ",

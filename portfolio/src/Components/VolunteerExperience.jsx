@@ -26,17 +26,25 @@ const VolunteerExperience = ({ details }) => {
       },
     ],
   };
+
+  const slideRight = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const slideLeft = () => {
+    sliderRef.current.slickPrev();
+  };
   return (
     <section className="experience-container">
       <h5>Volunteer Experience</h5>
 
       <div className="experience-content">
 
-        <div className="arrow-right">
+        <div className="arrow-right" onClick={slideRight}>
           <span class="material-symbols-outlined">chevron_right</span>
         </div>
 
-        <div className="arrow-left">
+        <div className="arrow-left" onClick={slideLeft}>
         <span class="material-symbols-outlined">chevron_left</span>
         </div>
           <Slider ref={sliderRef} {...settings}>
