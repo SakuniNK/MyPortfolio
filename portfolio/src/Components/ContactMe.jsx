@@ -1,12 +1,29 @@
 import React from 'react'
 import "../Styles/ContactMe.css";
-
+import ContactInfoCard from './ContactInfoCard';
+import Email from "../Assets/images/mail.png";
+import Github from "../Assets/images/github.png";
 
 const ContactMe = () => {
   return (
-    <div>
-      contact
-    </div>
+    
+    <section className="contact-container">
+        <h5>Contact Me</h5>
+
+        <div className="contact-content">
+            <div style={{flex: 1}}>
+                <ContactInfoCard
+                iconUrl={Email}
+                text="kodithuwakkusakuni@gmail.com"
+                />
+                 <ContactInfoCard
+                iconUrl={Github}
+                text="https://github.com/SakuniNK"
+                />
+            </div>
+            <div style={{flex: 1}}></div>
+        </div>
+    </section>
   )
 }
 
