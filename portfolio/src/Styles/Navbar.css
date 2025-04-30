@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 
 .nav-wrapper {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 106, 113, 0.8);
     padding: 0.5rem 0;
     position: sticky;
     top: 0;
@@ -13,30 +13,43 @@
     max-width: 1300px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-    margin: 0 auto;
+    justify-content: space-between; /* Adjust spacing between logo and content */
+    padding: 0.5rem 0; /* Reduce padding */
+    margin: 0 auto 0 5rem;
+    margin-left: 2rem; 
 }
 
 .logo {
-    width: 292px;
-    height: 146px;
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+    padding: 0.2rem;
+    border-radius: 25%;
+    border: 2px solid #48A6A7; /* Add a border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    margin-left: 8.5rem;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Enhance shadow on hover */
 }
 
 .nav-content ul {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: -1rem; /* Adjust spacing between menu items */
     list-style: none;
 }
 
-.nav-content li{
-    margin: 0 1.5rem;
+.nav-content li {
+    margin: 0 2rem; /* Reduce margin between list items */
 }
 
 .menu-item {
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #ffffff;
     position: relative;
@@ -47,7 +60,7 @@
     content: " ";
     width: 2rem;
     height: 0.2rem;
-    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    background: linear-gradient(90deg, #F2EFE7 0%, #48A6A7 100%);
     position: absolute;
     bottom: -0.6rem;
     opacity: 0;
@@ -63,12 +76,12 @@
 
 .contact-btn{
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    color: #021111;
+    background: linear-gradient(90deg, #F2EFE7 0%, #48A6A7 100%);
     padding: 0.6rem 2rem;
     border: none;
     outline:1.5px solid transparent;
@@ -78,12 +91,12 @@
 }
 
 .contact-btn:hover{
-    color: #a993fe;
-    background: #000;
-    outline: 1.5px solid #a993fe;
+    color: #F2EFE7;
+    background: #006A71;
+    outline: 1.5px solid #006A71;
 }
 
-.menu-btn{
+/* .menu-btn{
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.5rem;
@@ -92,7 +105,7 @@
     justify-content: center;
     border-radius: 0.4rem;
     color: #fff;
-    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    background: linear-gradient(90deg, #c7c9ca 0%, #e7e8e9 100%);
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -100,10 +113,10 @@
 }
 
 .menu-btn:hover{
-    color: #a993fe;
+    color: #ffffff;
     background: #000;
-    border: 1px solid #a993fe;
-}
+    border: 1px solid #84878b;
+} */
 @media (max-width: 769px) {
     .logo{
         width: 5rem;

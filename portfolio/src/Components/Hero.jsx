@@ -13,16 +13,25 @@ const Hero = ()=> {
     return (
         <section className="hero-container">
         <div className="hero-content">
-            <h2>Embracing daily lessons, shaping tomorrow's innovations.</h2>
-            <p>I’m a passionate full-stack developer with a drive for continuous learning
-                and growth. Every challenge is an opportunity to expand my skill set,
-                from front-end design to back-end functionality.
-                I thrive on building innovative, user-centered solutions
-                that blend technical expertise with creativity.
-                My goal is to contribute to a dynamic team where
-                I can leverage my knowledge and dedication
-                to deliver impactful software.
-            </p>
+            <h2>Sakuni Nikeshala</h2>
+            <h3>Full Stack Developer</h3>
+            <p>I'm a Final year Computer Science and Technology undergraduate at Uva Wellassa University of Sri Lanka, passionate about turning ideas into impactful digital solutions.
+With hands-on experience in full-stack development, machine learning, and natural language processing, I love building applications that solve real world problems.
+</p>       
+<p>
+Let's connect and create something amazing!</p>
+
+            <div className="hero-btns">
+                <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" className="social-icon" />
+                </a>
+                <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="social-icon" />
+                </a>
+                <button className="download-btn" onClick={() => {}}>
+                    Download CV
+                </button>
+            </div>
         </div>
         <div className="hero-img">
             <div className="profile-img">

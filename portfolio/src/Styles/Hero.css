@@ -1,3 +1,7 @@
+body{
+    color: #fff;
+    background-color: #F2EFE7;
+}
 .hero-container {
     display: flex;
     align-items: center;
@@ -12,7 +16,7 @@
     width: 28.125rem;
     height: 28.125rem;
     border-radius: 28.125rem;
-    background: #7c66e3;
+    background: #F2EFE7;
     z-index: -1;
     filter: blur(225px);
     position: absolute;
@@ -38,6 +42,14 @@
     font-weight: 600;
     line-height: 5rem;
     margin-bottom: 1rem;
+    color: #000;
+}
+.hero-content h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    color: #000;
 }
 
 .hero-content p {
@@ -45,6 +57,50 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 2rem;
+    color: #000;
+    text-align: justify;
+}
+
+.hero-btns {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Increase spacing between icons and button */
+    margin-top: 1rem;
+}
+
+.social-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 40px; /* Increase icon size */
+    height: 40px;
+    opacity: 1; /* Make the icons slightly transparent */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    opacity: 1; /* Fully visible on hover */
+}
+
+.hero-btns .download-btn {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.7rem 2.5rem; /* Adjust padding for a larger button */
+    background: linear-gradient(90deg, #F2EFE7 5%, #48A6A7 100%);
+    color: #021111;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-btns .download-btn:hover {
+    color: #F2EFE7;
+    background: #006A71;
+    outline: 1.5px solid #006A71;
 }
 
 .hero-img {
@@ -60,7 +116,7 @@
     height: 30rem;
     border-radius: 1.5rem;
     overflow: hidden; /* Ensures round profile picture */
-    border: 2px solid #6852ba; /* Optional border around profile image */
+    border: 2px solid #000; /* Optional border around profile image */
 }
 
 .hero-img .profile-img img {
@@ -82,7 +138,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
-    border: 1.5px solid #6852ba;
+    border: 1.5px solid #000;
 }
 
 .tech-icon img {

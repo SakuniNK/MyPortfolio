@@ -2,7 +2,7 @@
 
     min-height: 23rem;
     border-radius: 0.65rem;
-    border: 1.5px solid #6751b9;
+    border: 1.5px solid #51a6b9;
     background: rgba(22, 17, 47, 0.398);
     backdrop-filter: blur(1rem);
 }
@@ -11,11 +11,11 @@
     font-size: 1.2rem;
     font-weight: 500;
     padding: 0.8rem 2rem;
-    background: linear-gradient(180deg, #ac96ff 0%, #7c5fe6 100%);
+    background: linear-gradient(180deg, #96efff 0%, #5fa5e6 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-bottom: 1.5px solid #6751b9;
+    border-bottom: 1.5px solid #518ab9;
 
 }
 
@@ -42,7 +42,7 @@
 
 .skill-info .percentage {
 
-    color: #dd8cfa;
+    color: #8cccfa;
 
 }
 
@@ -50,7 +50,7 @@
 
     width: 100%;
     height: 0.5rem;
-    background: #382e68;
+    background: #2e4d68;
     border-radius: 0.5rem;
     margin: 1rem 0;
     overflow: hidden;
@@ -61,7 +61,7 @@
 
     width: 0%;
     height: 0.5rem;
-    background: linear-gradient(90deg, #aa94fe -50%, #7d60e6 50%);
+    background: linear-gradient(90deg, #94d5fe -50%, #10b6e8 50%);
     border-radius: 0.5rem;
     transition: all 0.5s ease-in-out;
 }
