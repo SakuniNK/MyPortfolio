@@ -7,6 +7,8 @@ import spring from "../Assets/images/spring.png";
 import react from "../Assets/images/react.png";
 import python  from "../Assets/images/python.png";
 import profile from "../Assets/images/Sprofile.jpeg";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 
 const Hero = ()=> {
@@ -22,14 +24,14 @@ With hands-on experience in full-stack development, machine learning, and natura
 Let's connect and create something amazing!</p>
 
             <div className="hero-btns">
-                <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer" className="social-link">
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" className="social-icon" />
+                <a href="https://github.com/SakuniNK" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <FaGithub className="social-icon" />
                 </a>
-                <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" className="social-link">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="social-icon" />
+                <a href="https://linkedin.com/in/sakunikodithuwakku/" target="_blank" rel="noopener noreferrer" className="social-link">
+                <FaLinkedin className="social-icon"/>
                 </a>
                 <button className="download-btn" onClick={() => {}}>
-                    Download CV
+                    <a href="https://drive.google.com/file/d/1Z3W-oF2BK2vRJmgX82BcxxDqp-3_rQf6/view?usp=sharing" target="_blank" rel="noopener noreferrer" download>Download CV</a>
                 </button>
             </div>
         </div>

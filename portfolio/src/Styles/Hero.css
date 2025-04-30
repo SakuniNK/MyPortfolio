@@ -4,10 +4,12 @@ body{
 }
 .hero-container {
     display: flex;
-    align-items: center;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the content */
+    align-items: center; /* Vertically align content and image */
+    justify-content: space-between; /* Distribute space evenly between content and image */
+    flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
+    gap: 2rem; /* Add spacing between the two divs */
+    padding: 1rem 2rem; /* Adjust padding to reduce the gap */
+    margin-top: -2rem; /* Move the entire section closer to the navbar */
 }
 
 .hero-container::after,
@@ -33,13 +35,19 @@ body{
 }
 
 .hero-content {
-    flex: 1;
-    max-width: 600px; /* Limit the text content width */
+    flex: 1; /* Allow the content to take up equal space */
+    max-width: 50%; /* Limit the width to balance with the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    gap: -1rem; /* Add spacing between text elements */
+    margin-top: -2rem; /* Remove any extra margin */
 }
 
 .hero-content h2 {
     font-size: 3.8rem;
     font-weight: 600;
+    gap: -1rem; /* Add spacing between text elements */
     line-height: 5rem;
     margin-bottom: 1rem;
     color: #000;
@@ -74,15 +82,16 @@ body{
 }
 
 .social-icon {
-    width: 40px; /* Increase icon size */
+    width: 40px; /* Icon size */
     height: 40px;
-    opacity: 1; /* Make the icons slightly transparent */
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1; /* Fully visible */
+    filter: grayscale(100%); /* Convert to black and white */
+    transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
 }
 
 .social-icon:hover {
     transform: scale(1.2); /* Slight zoom effect on hover */
-    opacity: 1; /* Fully visible on hover */
+    filter: grayscale(100%); /* Restore original color on hover */
 }
 
 .hero-btns .download-btn {
@@ -103,26 +112,37 @@ body{
     outline: 1.5px solid #006A71;
 }
 
+.hero-btns .download-btn a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Ensure the text color matches the button */
+}
+
 .hero-img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    margin-top: 5rem;
+    gap: 1rem;
+    margin-top: 6rem;
 }
 
 .hero-img .profile-img {
-    width: 30rem; 
+    width: 20rem; 
     height: 30rem;
-    border-radius: 1.5rem;
-    overflow: hidden; /* Ensures round profile picture */
-    border: 2px solid #000; /* Optional border around profile image */
+    border-radius: 1.5rem; /* Keep the rounded corners */
+    overflow: hidden; /* Ensures the image stays within the rounded shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for highlighting */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.hero-img .profile-img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 20px rgba(72, 166, 167, 0.8); /* Add a glow effect */
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .hero-img .profile-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Makes sure the image fits well */
+    object-fit: cover; /* Ensures the image fits well */
 }
 
 .hero-img .tech-icons-row {

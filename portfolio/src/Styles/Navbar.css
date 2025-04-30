@@ -13,7 +13,7 @@
     max-width: 1300px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjust spacing between logo and content */
+    justify-content: space-between; /* Adjust spacing between logo and content
     padding: 0.5rem 0; /* Reduce padding */
     margin: 0 auto 0 5rem;
     margin-left: 2rem; 
@@ -137,4 +137,4 @@
     .nav-wrapper{
         padding: 0 2rem;
     }
-}
+} 
