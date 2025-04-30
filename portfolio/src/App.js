@@ -6,8 +6,9 @@ import Hero from "./Components/Hero";
 import Skills from './Components/Skills';
 import VolunteerExperience from "./Components/VolunteerExperience";
 import ContactMe from "./Components/ContactMe";
-import Footer
- from "./Components/Footer";
+import Footer from "./Components/Footer";
+import ScrollUp from "./Components/ScrollUp";
+
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
        <ContactMe/>
      </div>
      <Footer/>
+     <ScrollUp/>
     </>
   );
 }
