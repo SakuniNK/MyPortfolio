@@ -35,41 +35,57 @@ const Navbar = () => {
     }, []);
 
     return (
-
-       
-        <>
+        <header className="header">
             <nav className="nav-wrapper">
                 <div className="nav-content">
                     <img src={logo} alt="logo" className="logo" />
-                    <ul>
-                        <li>
-                            <a href={Hero} className="menu-item">Home</a>  
-                        </li>
-                        <li>
-                            <a href={Skills} className="menu-item">Skills</a> 
-                        </li>
-                        <li>
-                            <a href={Projects} className="menu-item">Projects</a> 
-                        </li>
-                        <li>
-                            <a href={Volunteer} className="menu-item">Volunteer Experience</a> 
-                        </li>
-                        <li>
-                            <a href={Contact} className="menu-item">Contact Me</a> 
-                        </li>
-                        <button className="contact-btn" onClick={() => {}}>
-                            Hire Me
-                        </button>
-                    </ul>
+                    
+                    <div className="nav-menu">
+                        <ul className="nav-list grid">
+                            <li className="nav-item">
+                                <a href="#home" className="nav-link active-link">
+                                    <i className="uil uil-estate nav__icon"></i> Home</a>  
+                            </li>
 
-                    {/* <button className="menu-btn" onClick={() => {}}>
-                        <span className="material-symbols-outlined" style={{fontSize: "1.8rem"}}>
-                            menu
-                        </span>
-                    </button> */}
+                            <li className="nav-item">
+                                <a href="#skills" className="nav-link">
+                                <i className="uil uil-file-alt nav__icon"></i>Skills</a> 
+                            </li>
+
+                            <li className="nav-item">
+                                <a href="#projects" className="nav-link">
+                                <i className="uil uil-briefcase-alt nav__icon"></i>Projects</a> 
+                            </li>
+
+                            <li className="nav-item">
+                                <a href="#education" className="nav-link">
+                                <i className="uil uil-graduation-cap nav__icon"></i>Education</a> 
+                            </li>
+
+                            <li className="nav-item">
+                                <a href="#experience" className="nav-link">
+                                <i className="uil uil-users-alt nav__icon"></i>Volunteer Experience</a> 
+                            </li>
+
+                            <li className="nav-item">
+                                <a href="#contact" className="nav-link">
+                                <i className="uil uil-message nav__icon"></i>Contact Me</a> 
+                            </li>
+
+                            <button className="contact-btn" onClick={() => {}}>
+                                Hire Me
+                            </button>
+                        </ul>
+                        <i className="uil uil-times nav__close"></i>
+                    </div>
+
+                    <div className="nav__toggle">
+                        {/* Replacing the app icon with a different one */}
+                        <i className="uil uil-bars nav__toggle"></i>
+                    </div>
                 </div>
             </nav>
-        </>
+        </header>
     );
 };
 
